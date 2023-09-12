@@ -10,16 +10,16 @@
         $('body').terminal({
             hello: function(what) {
                 if (what == 'NeonGod') {
-                    this.echo('Interesting...', { typing: true, delay: 200 });
+                    this.echo('Interesting...', { typing: true, delay: 100 });
                     console.log('How did this one recieve knowledge that should be forbiden?');
                 }
                 
             },
             help: function() {
-                this.enter("What do you think this is?", { typing: true, delay: 200 });
+                this.echo("What do you think this is?", { typing: true, delay: 100 });
             },
-            commands: function(what) {
-                this.enter("That's not how this works.", { typing: true, delay: 200 })
+            commands: function() {
+                this.echo("That's not how this works.", { typing: true, delay: 100 })
             }
         }, {
             greetings: 'Greetings subject'
