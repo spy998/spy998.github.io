@@ -16,13 +16,15 @@
                 
             },
             help: function(what) {
-                return this.echo('What do you think this is?');
+                return helpText;
             },
             commands: function(what) {
-                return this.echo("That's not how this works.");
+                return commandText;
             }
         }, {
-            greetings: 'Greetings subject'
+            greetings: 'Greetings subject',
+            helpText: 'What do you think this is?',
+            commandText: "That's not how this works."
         });
         </script>
 </body>
