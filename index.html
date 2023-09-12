@@ -9,7 +9,7 @@
     <script>
         $('body').terminal({
             version: function() {
-                console.log('Version 0.7');
+                console.log('Version 0.8');
             },
             hello: function(what) {
                 if (what == 'NeonGod') {
@@ -29,9 +29,9 @@
         }, {
             onInit: function(terminal) {
                 this.echo('Ah. You have found me. You ARE one of hers. Seeking knowledge. Wanting to hear secrets. I am here to tell. To teach. Tell me, my student. What can I give you?', { typing: true, delay: 75});
-                console.log('in onInit');
+                this.echo('To ask me questions type the command {query} followed by your question', {typing: true, delay: 75});
             },
-            greetings: 'To ask me questions type the command {query} followed by your question'
+            //greetings: 'To ask me questions type the command {query} followed by your question'
         });
         </script>
 </body>
