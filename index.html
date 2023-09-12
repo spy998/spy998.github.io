@@ -8,6 +8,9 @@
 <body>
     <script>
         $('body').terminal({
+            open: function() {
+                consol.log('Version 0.1');
+            },
             hello: function(what) {
                 if (what == 'NeonGod') {
                     this.echo('Interesting...', { typing: true, delay: 50 });
