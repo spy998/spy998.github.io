@@ -5,15 +5,21 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
 </head>
-<body>
+<body class ="typewriter">
     <script>
         $('body').terminal({
             hello: function(what) {
                 if (what == 'NeonGod') {
-                    console.log('How did this one recieve knowledge that should be forbiden?');
                     this.echo('Interesting...');
+                    console.log('How did this one recieve knowledge that should be forbiden?');
                 }
                 
+            },
+            help: function() {
+                this.echo('What do you think this is?');
+            },
+            commands: function() {
+                this.echo("That's not how this works.");
             }
         }, {
             greetings: 'Greetings subject'
