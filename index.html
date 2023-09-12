@@ -9,21 +9,21 @@
     <script>
         $('body').terminal({
             version: function() {
-                console.log('Version 0.2');
+                console.log('Version 0.3');
             },
             hello: function(what) {
                 if (what == 'NeonGod') {
-                    this.echo('Interesting...', { typing: true, delay: 50 });
+                    this.echo('Interesting...', { typing: true, delay: 75 });
                     console.log('How did this one recieve knowledge that should be forbiden?');
                 }
                 
             },
             help: function() {
-                this.echo("What do you think this is?", { typing: true, delay: 50 });
+                this.echo("What do you think this is?", { typing: true, delay: 75 });
                 console.log('Amusing, this one thinks they can learn so easily.');
             },
             commands: function() {
-                this.echo("That's not how this works.", { typing: true, delay: 50 });
+                this.echo("That's not how this works.", { typing: true, delay: 75 });
                 console.log('I am the one in control here.');
             }
         }, {
