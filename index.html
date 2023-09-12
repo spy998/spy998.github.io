@@ -10,13 +10,13 @@
         $('body').terminal({
             hello: function(what) {
                 if (what == 'NeonGod') {
-                     this.echo('Interesting...', {typing: true, delay: 200});
+                     this.echo('Interesting...', { typing: true, delay: 200 });
                     console.log('How did this one recieve knowledge that should be forbiden?');
                 }
                 
             },
-            help: function(what) {
-                return helpText;
+            help: function() {
+                this.enter("What do you think this is?", { typing: true, delay: 200});
             },
             commands: function(what) {
                 return commandText;
