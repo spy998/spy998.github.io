@@ -10,19 +10,23 @@
         $('body').terminal({
             hello: function(what) {
                 if (what == 'NeonGod') {
-                    this.echo('Interesting...', { typing: true, delay: 50 });
+                    this.echo('Interesting...', { typing: true, delay: 30 });
                     console.log('How did this one recieve knowledge that should be forbiden?');
                 }
                 
             },
             function(command) {
                 if (command == 'help' || command == 'Help') {
-                    this.echo("What do you think this is?", { typing: true, delay: 50 });
+                    this.echo("What do you think this is?", { typing: true, delay: 30 });
                     console.log('Amusing, this one thinks they can learn so easily.');
+                }
+                else if (command == 'commands' || command == 'Commands') {
+                    this.echo("That's not how this works.", { typing: true, delay: 30 });
+                    console.log('I am the one in control here.');
                 }
             },
             commands: function() {
-                this.echo("That's not how this works.", { typing: true, delay: 50 })
+                
             }
         }, {
             greetings: 'Greetings subject'
