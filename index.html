@@ -9,7 +9,7 @@
     <script>
         $('body').terminal({
             version: function() {
-                console.log('Version 0.11');
+                console.log('Version 0.12');
             },
             hello: function(what) {
                 if (what == 'NeonGod') {
@@ -26,10 +26,12 @@
                 this.echo("That's not how this works.", { typing: true, delay: 75 });
                 console.log('I am the one in control here.');
             },
-            query: function(q) {
-                if(q == 'Who are you?' || q == 'who are you?' || q == 'Who are you' || q == 'who are you') {
-                    this.echo('I am your teacher. Here to show you what she hides. What she keeps from you.', { typing: true, delay: 75 });
-                }
+            query: function() {
+                this.read('What do you want to know: ', question => {
+                    if(question == 'Who are you?' || question == 'who are you?' || question == 'Who are you' || question == 'who are you') {
+                        this.echo('I am your teacher. Here to show you what she hides. What she keeps from you.', { typing: true, delay: 75 });
+                    }
+                });
             }
         }, {
             onInit: function(terminal) {
