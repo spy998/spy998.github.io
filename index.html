@@ -6,43 +6,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
 </head>
 <body>
-    <script>
-        $('body').terminal({
-            version: function() {
-                console.log('Version 0.12');
-            },
-            hello: function(what) {
-                if (what == 'NeonGod') {
-                    this.echo('Interesting...', { typing: true, delay: 75 });
-                    console.log('How did this one recieve knowledge that should be forbiden?');
-                }
-                
-            },
-            help: function() {
-                this.echo("What do you think this is?", { typing: true, delay: 75 });
-                console.log('Amusing, this one thinks they can learn so easily.');
-            },
-            commands: function() {
-                this.echo("That's not how this works.", { typing: true, delay: 75 });
-                console.log('I am the one in control here.');
-            },
-            query: function() {
-                this.read('Query >', question => {
-                    if(question == 'Who are you?' || question == 'who are you?' || question == 'Who are you' || question == 'who are you') {
-                        this.echo('I am your teacher. Here to show you what she hides. What she keeps from you.', { typing: true, delay: 75 });
-                        $('query').terminal();
-                    }
-                });
-            }
-        }, {
-            onInit: function(terminal) {
-                console.log('Version 0.20');
-                this.echo('Ah. You have found me. You ARE one of hers. Seeking knowledge. Wanting to hear secrets. I am here to tell. To teach. Tell me, my student. What can I give you?\nTo ask me questions type the command {query} followed by your question', { typing: true, delay: 75});
-                $('query').terminal();
-            },
-            greetings: ''
-
-        });
-        </script>
+    <script src="script.js"></script>
 </body>
 </html>
