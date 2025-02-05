@@ -25,7 +25,7 @@ const term =  $('body').terminal({
                     this.echo('Goodbye, my student. Seek me out when you wish to learn more.', { typing: true, delay: 75 });
                 }
             })
-        } while(1 = 1);
+        } while(1 < 2);
     },
     greetings: '',
     invokeMethods: true,
