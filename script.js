@@ -13,8 +13,8 @@ const term =  $('body').terminal({
 }, 
 {
     onInit: function(term) {
-        console.log('Version 0.30');
-        term.echo('Ah. You have found me. You ARE one of hers. Seeking knowledge. Wanting to hear secrets. I am here to tell. To teach. Tell me, my student. What can I give you?\nTo ask me questions type the command {query} followed by your question', { typing: true, delay: 75});
+        console.log('Version 0.31');
+        term.echo('Ah. You have found me. You ARE one of hers. Seeking knowledge. Wanting to hear secrets. I am here to tell. To teach. Tell me, my student. What can I give you?', { typing: true, delay: 75});
         
         do {
             term.read('>', question => {
@@ -25,7 +25,7 @@ const term =  $('body').terminal({
                     this.echo('Goodbye, my student. Seek me out when you wish to learn more.', { typing: true, delay: 75 });
                 }
             })
-        } while(true);
+        } while(1 = 1);
     },
     greetings: '',
     invokeMethods: true,
