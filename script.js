@@ -1,3 +1,4 @@
+let loop = true;
 const term =  $('body').terminal({
     query: function() {
          term.read('> ', question => {
@@ -13,7 +14,6 @@ const term =  $('body').terminal({
 }, 
 {
     onInit: function(term) {
-        let loop = true;
         console.log('Version 0.29');
         term.echo('Ah. You have found me. You ARE one of hers. Seeking knowledge. Wanting to hear secrets. I am here to tell. To teach. Tell me, my student. What can I give you?\nTo ask me questions type the command {query} followed by your question', { typing: true, delay: 75});
         
