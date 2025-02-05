@@ -7,11 +7,10 @@ const term =  $('body').terminal({
             if(question == 'hello' || question == 'Hello') {
                 this.echo('Hello, my student. What can I teach you today? [[ q ]]', { typing: true, delay: 75 });
             }
+            if(question == 'roll' || question == 'Roll') {
+                this.echo('https://www.youtube.com/watch?v=dQw4w9WgXcQ [[ q ]]', { typing: true, delay: 75 });
+            }
         })
-    },
-
-    hello: function(what) {
-        this.echo('Hello, ' + what + '!', { typing: true, delay: 75 });
     },
 }, 
 {
