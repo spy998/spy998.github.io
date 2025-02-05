@@ -1,4 +1,4 @@
-let loop = true;
+//let loop = true;
 const term =  $('body').terminal({
     query: function() {
          term.read('> ', question => {
