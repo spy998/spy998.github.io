@@ -1,0 +1,18 @@
+body {
+    color: #ffffff;
+    background-color: #646464;
+}
+
+#main {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 125%;
+    line-height: 150%;
+}
+
+#tr {
+    padding: 20px;
+    font-family: Georgia, sans-serif;
+    font-size: 125%;
+    line-height: 120%;
+}
