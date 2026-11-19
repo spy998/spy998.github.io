@@ -16,3 +16,11 @@ body {
     font-size: 125%;
     line-height: 120%;
 }
+
+#sans {
+    padding: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 100%;
+    line-height: 120%
+
+}
